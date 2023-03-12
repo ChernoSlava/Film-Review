@@ -1,0 +1,24 @@
+{
+  "name": "film-review",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChernoSlava/Film-Review.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChernoSlava/Film-Review/issues"
+  },
+  "homepage": "https://github.com/ChernoSlava/Film-Review#readme",
+  "dependencies": {
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
