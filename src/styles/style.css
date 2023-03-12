@@ -1,3 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;600;700;800&display=swap");
+html {
+  font-size: 10px;
+}
+
 body {
-  background-color: aquamarine;
+  background-color: black;
+  color: white;
+  font-size: 16x;
+  font-family: "Mulish", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 144rem;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+.navigation__item {
+  margin: 0 1.5rem;
+  list-style: none;
+}
+.navigation__link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  position: relative;
+}
+.navigation__link::after {
+  content: "";
+  opacity: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 0.5rem;
+  border-radius: 5rem;
+  background: rgb(50, 108, 255);
+  background: linear-gradient(151deg, rgb(50, 108, 255) 0%, rgb(38, 255, 242) 100%);
+}
+.navigation__link.active {
+  color: white;
+}
+.navigation__link.active::after {
+  opacity: 1;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+.control__item {
+  margin-left: 7.5rem;
+}
+.control__btn {
+  background-color: transparent;
+  border: none;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.control__btn:hover {
+  opacity: 0.6;
+}
+.control__btn_search {
+  background-image: url(images/search.svg);
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.control__btn_notice {
+  background-image: url(images/notice.svg);
+  width: 2.13rem;
+  height: 2.35rem;
+}
+.control__btn_account {
+  background-image: url(images/account.svg);
+  width: 1.8rem;
+  height: 1.92rem;
 }/*# sourceMappingURL=style.css.map */
