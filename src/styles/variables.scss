@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;600;700;800&display=swap');
+
 //COLOR
 
 $black10: black;
+$black20: #2F2F2F;
+$black30: #323232;
 $white10: white;
+$white20: #c2c2c2;
+
 $bg-gradient: linear-gradient(151deg, rgba(50,108,255,1) 0%, rgba(38,255,242,1) 100%);
 $bg-gradient-safe: rgb(50,108,255);
+
+// FONT FAMILY
+
+$standartFont: 'Mulish', sans-serif;
+$titleFont: 'Marcellus', serif;
