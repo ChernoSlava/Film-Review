@@ -136,42 +136,43 @@ button {
     position: relative;
     font-weight: 700;
     display: inline-block;
+
+    &::before {
+      content: '';
+      display: block;
+      width: .8rem;
+      height: 3.5rem;
+      border-radius: 5rem;
+      background: $bg-gradient-safe;
+      background: $bg-gradient;
+      position: absolute;
+      left: 0;
+      top: calc(50% - 1.7rem);
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: .9rem;
+      height: 1.5rem;
+      background-image: url(images/title-arrow.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: 0;
+      top: calc(50% - .7rem);
+    }
+
+    &-link {
+      color: $white10;
+      text-decoration: none;
+    }
   }
 
-  &::before {
-    content: '';
-    display: block;
-    width: .8rem;
-    height: 3.5rem;
-    border-radius: 5rem;
-    background: $bg-gradient-safe;
-    background: $bg-gradient;
-    position: absolute;
-    left: 0;
-    top: calc(50% - 1.7rem);
-  }
-
-  &::after {
-    content: '';
-    display: block;
-    width: .9rem;
-    height: 1.5rem;
-    background-image: url(images/title-arrow.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    right: 0;
-    top: calc(50% - .7rem);
-  }
-
-  &-link {
-    color: $white10;
-    text-decoration: none;
-  }
 }
 
 .section-bunner {
-  border-bottom: 1rem solid $black20;
+  border-bottom: .1rem solid $black20;
   position: relative;
   overflow: hidden;
   background-image: url(images/banner.png);
@@ -319,5 +320,41 @@ button {
         background-color: transparent;
       }
     }
+  }
+}
+
+.movies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__item {
+    box-shadow: 0px 0px 0px rgba(44, 176, 249, 0);
+    transition: .2s ease box-shadow;
+    border-radius: 2rem;
+    flex: 0 0 14%;
+
+    &:hover {
+      box-shadow: (0px 0px 20px rgba(44, 176, 249, 0.5));
+    }
+  }
+
+  &__link {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 30.9rem;
+    display: block;
+    border-radius: 2rem;
+  }
+
+  &__img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    width: 100%;
+
   }
 }
