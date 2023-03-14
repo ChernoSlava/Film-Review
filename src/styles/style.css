@@ -148,6 +148,23 @@ button:focus {
   color: white;
   text-decoration: none;
 }
+.section__btn {
+  border: none;
+  border-radius: 10rem;
+  padding: 1.5rem 3rem;
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+  background: rgb(50, 108, 255);
+  background: linear-gradient(151deg, rgb(50, 108, 255) 0%, rgb(38, 255, 242) 100%);
+  color: white;
+  box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
+  transition: 0.2s ease box-shadow;
+  margin-top: 5.5rem;
+}
+.section__btn:hover {
+  box-shadow: 0px 0px 0px rgba(50, 108, 255, 0.5);
+}
 
 .section-bunner {
   border-bottom: 0.1rem solid #2F2F2F;
