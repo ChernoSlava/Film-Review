@@ -447,3 +447,35 @@ button {
     margin: .2rem 0 0 0;
   }
 }
+
+.actors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 2.1rem;
+
+  &__item {
+    flex: 0 0 14%;
+  }
+
+  &__link {
+    overflow: hidden;
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    display: block;
+    border-radius: 100%;
+    margin: auto;
+  }
+
+  &__img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    width: 18rem;
+    height: 18rem;
+  }
+}

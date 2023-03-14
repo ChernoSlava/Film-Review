@@ -738,6 +738,36 @@ button:focus {
   font-size: 2.8rem;
   font-weight: 700;
   margin: 0.2rem 0 0 0;
+}
+
+.actors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 2.1rem;
+}
+.actors__item {
+  flex: 0 0 14%;
+}
+.actors__link {
+  overflow: hidden;
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  display: block;
+  border-radius: 100%;
+  margin: auto;
+}
+.actors__img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 18rem;
+  height: 18rem;
 }/*# sourceMappingURL=style.css.map */
     </style>
   </head>
@@ -840,6 +870,31 @@ button:focus {
           <div class="genres__item genres__item_documentary">
             <div class="genres__icon"><img class="genres__image" src="../src/images/genres/documentary.svg" alt="Documentary ico"></div>
             <div class="h3 genres__title">Documentary</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2 class="section__h2"> <a class="section__h2-link" href="#">Popular Actors and Directors</a></h2>
+        <div class="actors">
+          <div class="actors__item"> <a class="actors__link" href="#"><img class="actors__img" src="../src/images/actor/actor01.png" alt=""></a>
+            <h3 class="actors__title">Samantha Bowen</h3>
+          </div>
+          <div class="actors__item"> <a class="actors__link" href="#"><img class="actors__img" src="../src/images/actor/actor01.png" alt=""></a>
+            <h3 class="actors__title">Samantha Bowen</h3>
+          </div>
+          <div class="actors__item"> <a class="actors__link" href="#"><img class="actors__img" src="../src/images/actor/actor01.png" alt=""></a>
+            <h3 class="actors__title">Samantha Bowen</h3>
+          </div>
+          <div class="actors__item"> <a class="actors__link" href="#"><img class="actors__img" src="../src/images/actor/actor01.png" alt=""></a>
+            <h3 class="actors__title">Samantha Bowen</h3>
+          </div>
+          <div class="actors__item"> <a class="actors__link" href="#"><img class="actors__img" src="../src/images/actor/actor01.png" alt=""></a>
+            <h3 class="actors__title">Samantha Bowen</h3>
+          </div>
+          <div class="actors__item"><a class="actors__link" href="#"><img class="actors__img" src="../src/images/actor/actor01.png" alt=""></a>
+            <h3 class="actors__title">Samantha Bowen</h3>
           </div>
         </div>
       </div>
