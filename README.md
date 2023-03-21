@@ -1,4 +1,4 @@
-# Film-ReviewFilm-Review
+# Film-Review
 ## Film-Review project with PUG and SCSS
 ### Данный проект создан с целью обучения и использования PUG. 
 
